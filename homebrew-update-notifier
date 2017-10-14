@@ -21,7 +21,7 @@ function outdated() {
 
   items=$(perl -pe 's/\n/, /g' <(echo -n "${items}"))
 
-  ${TERMINAL_NOTIFIER} ${NOTIFIER} -title "${title}" -message "${items}"
+  ${TERMINAL_NOTIFIER} ${NOTIFIER} -title "${title}" -message "${items}" -group "Homebrew-${context}"
 }
 
 ${BREW} update 2>&1 > /dev/null
@@ -33,7 +33,7 @@ formula_pinned=$(${BREW} list --pinned)
 formula_outdated=$(comm -23 <(echo "${formula_outdated}") <(echo "${formula_pinned}"))
 
 if [ -n "${formula_outdated}" ]; then
-  outdated "Brew" "${formula_outdated}"
+  outdated "Formula" "${formula_outdated}"
 fi
 
 cask_outdated=$(${BREW} cask outdated --quiet)
