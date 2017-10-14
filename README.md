@@ -62,7 +62,7 @@ Based on Richard Woeber's work: [:octocat:](https://github.com/rwoeber/homebrew-
 
 ## Version
 
-2.0.0
+2.1.0
 
 ## Public Domain License
 
