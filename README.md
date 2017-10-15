@@ -1,6 +1,6 @@
-# OS&thinsp;X Homebrew Update Notifier
+# macOS Homebrew + Cask Update Notifier
 
-![](http://i.imgur.com/fLKR6Pw.png)
+![](https://i.imgur.com/wZHdBTj.jpg)
 
 A script to announce outdated [Homebrew](http://brew.sh/) formulas and cask
 installations in the macOS Notification Center.
