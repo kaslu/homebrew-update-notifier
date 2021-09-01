@@ -35,9 +35,3 @@ formula_outdated=$(comm -23 <(echo "${formula_outdated}") <(echo "${formula_pinn
 if [ -n "${formula_outdated}" ]; then
   outdated "Formula" "${formula_outdated}"
 fi
-
-cask_outdated=$(${BREW} cask outdated --quiet)
-
-if [ -n "${cask_outdated}" ]; then
-  outdated "Cask" "${cask_outdated}"
-fi
